@@ -2,11 +2,8 @@
 // (คำที่อ่านจากซ้ายไปขวาและขวาไปซ้ายเหมือนกัน เช่น &quot;madam&quot;, &quot;racecar&quot;)
 function isPalindrome(word) {
     const reversedWord = word.split("").reverse().join("");
-    if (word === reversedWord) {
-        return true;
-    } else {
-        return false;
-    }
+    return word === reversedWord;
 }
+
 console.log(isPalindrome("madam")); // true
 console.log(isPalindrome("hello")); // false
